@@ -17,6 +17,7 @@
 #define endl '\n'
 #define MAXN (int)1e5 + 5
 using namespace std;
+
 typedef pair<int, ii> iii;
 
 int main()
