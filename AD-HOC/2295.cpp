@@ -9,7 +9,7 @@ using namespace std;
 #define tam(vet) sizeof(vet) / sizeof(vet[0])
 #define all(x) x.begin(), x.end()
 #define endl "\n"
-#define maxn (int)1e5 + 7
+#define maxn (int)1e4 + 7
 
 typedef vector<int> vi;
 typedef pair<int, int> ii;
@@ -37,18 +37,7 @@ int fs(int &number)
 int main()
 {
     // freopen("input.txt", "r", stdin);
-    int v[5], v2[5];
-    for (int i = 0; i < 5; i++)
-        cin >> v[i];
-    for (int i = 0; i < 5; i++)
-        cin >> v2[i];
-    bool conf = false;
-    for (int i = 0; i < 5; i++)
-        if (v[i] == v2[i])
-            conf = true;
-    if (conf)
-        puts("N");
-    else
-        puts("Y");
-    return 0;
+    double a, b, aa, bb;
+    cin >> a >> b >> aa >> bb;
+    printf("%s\n", (aa / a > bb / b) ? "A" : "G");
 }

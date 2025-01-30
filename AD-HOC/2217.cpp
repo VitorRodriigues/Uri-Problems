@@ -15,25 +15,26 @@
 #define tam(vet) sizeof(vet) / sizeof(vet[0])
 #define all(x) x.begin(), x.end()
 #define endl '\n'
-#define MAXN (int)2e5 + 5
+#define MAXN (int)1e6 + 5
 using namespace std;
 
 int main()
 {
-    //freopen("input.txt", "r", stdin);
-    ll a;
-    cin >> a;
-    while(a--)
+    //  freopen("input.txt", "r", stdin);
+    int t;
+    cin >> t;
+    while (t--)
     {
-        int X;
-        cin >> X;
-        if(X==1)
-            cout << 1 << endl;
-        else if(X%2==0)
-            cout << X/2 << endl;
+        int n;
+        cin >> n;
+        if (n % 2 == 0)
+        {
+            cout << "1\n";
+        }
         else
-            cout << (X/2)+1 << endl;
+        {
+            cout << "9\n";
+        }
     }
-    
     return 0;
 }
